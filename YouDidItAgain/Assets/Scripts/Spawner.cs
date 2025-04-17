@@ -13,6 +13,8 @@ public class Spawner : MonoBehaviour {
     public float minForce = 18f;
     public float maxForce = 22f;
     public float maxLifetime = 5f;
+    public float spawnerDelay = 3f;
+
     private void Awake() {
         spawnArea = GetComponent<Collider>();
     }
@@ -26,7 +28,7 @@ public class Spawner : MonoBehaviour {
     }
 
     private IEnumerator Spawn() {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(spawnerDelay);
 
         while (enabled) {
             GameObject prefab = fruitPrefabs[Random.Range(0, fruitPrefabs.Length)];
