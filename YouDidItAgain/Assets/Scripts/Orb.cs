@@ -39,6 +39,10 @@ public class Orb : MonoBehaviour {
             Debug.Log("Wrong");
             // maybe GM.GameOver();
         }
+        Effectsm FX = GM.GetComponent<Effectsm>();
+        if (FX != null) {
+            FX.SpawnHitEffect(color.ToString(), transform.position);
+        }
 
         Destroy(gameObject);
     }
