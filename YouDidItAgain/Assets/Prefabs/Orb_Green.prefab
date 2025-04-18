@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3279996939681213559}
   - component: {fileID: -8314330352411770237}
   m_Layer: 0
-  m_Name: Orb_cyan
+  m_Name: Orb_Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6154023334546047615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.305002, y: 2.4828136, z: -6.93}
+  m_LocalPosition: {x: -1.6386173, y: 1.403367, z: -6.48}
   m_LocalScale: {x: 0.4114539, y: 0.4114539, z: 0.4114539}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: aa5b2079baefdfd43b5627a2a6e4e01b, type: 2}
+  - {fileID: 2100000, guid: 758c73cb52eee7343805ad82e2cc8a01, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

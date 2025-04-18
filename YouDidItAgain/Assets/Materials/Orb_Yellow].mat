@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Orb_cyan
+  m_Name: 'Orb_Yellow]'
   m_Shader: {fileID: -6465566751694194690, guid: 2a036c08e5fe7ac4c81cc558a72a0559, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -116,7 +116,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0.6556604, g: 1, b: 0.95504755, a: 1}
-    - _Color: {r: 0, g: 6.3541465, b: 6.3541465, a: 1}
+    - _Color: {r: 6.3541465, g: 6.3541465, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []

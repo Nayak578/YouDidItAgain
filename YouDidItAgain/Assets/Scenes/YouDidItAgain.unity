@@ -173,6 +173,8 @@ MonoBehaviour:
   fruitPrefabs:
   - {fileID: 6154023334546047615, guid: 5747181db9ff00e41be9de68e378b99a, type: 3}
   - {fileID: 6154023334546047615, guid: 7ce8b35a27cd1dc41ace74f5d2162b50, type: 3}
+  - {fileID: 6154023334546047615, guid: 26e5c2cbf10d7074dbd48ff3366ade5f, type: 3}
+  - {fileID: 6154023334546047615, guid: bd742ed4b21ce4141882385252db1de1, type: 3}
   minSpawnDelay: 0.25
   maxSpawnDelay: 1
   minAngle: -15
@@ -490,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 808288563}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: -4.9320064, y: -0.0008969307, z: -0.05496788}
+  m_LocalPosition: {x: -4.9320064, y: -0.214, z: -0.05496788}
   m_LocalScale: {x: 0.4852734, y: 0.88931423, z: 0.03631786}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -649,7 +651,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0.26799348, y: 2.0391033, z: -0.05496788}
-  m_LocalScale: {x: 1.2632806, y: 0.88931423, z: 0.03631786}
+  m_LocalScale: {x: 1.011318, y: 0.88931423, z: 0.03631786}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1379011970}
@@ -901,7 +903,7 @@ Transform:
   m_GameObject: {fileID: 1900882882}
   serializedVersion: 2
   m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 5.4579935, y: -0.0008969307, z: -0.05496788}
+  m_LocalPosition: {x: 5.4579935, y: -0.427, z: -0.05496788}
   m_LocalScale: {x: 0.52014315, y: 0.88931423, z: 0.03631786}
   m_ConstrainProportionsScale: 0
   m_Children: []
