@@ -182,7 +182,7 @@ MonoBehaviour:
   minForce: 6.6
   maxForce: 7.2
   maxLifetime: 5
-  spawnerDelay: 3
+  spawnerDelay: 4
 --- !u!4 &273449142
 Transform:
   m_ObjectHideFlags: 0
@@ -345,6 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727997519}
   - component: {fileID: 727997518}
+  - component: {fileID: 727997520}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -389,6 +390,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &727997520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727997517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8401bf435c023e841948d92bfbe234a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basicHit: {fileID: 5238538877814813142, guid: 9f7121ab9b8c3404b9dd5563d44c2567, type: 3}
+  RedHit: {fileID: 8762405910555896786, guid: f78dd1f59287b5747b2f9cdb326793c8, type: 3}
+  CyanHit: {fileID: 7275548786892498063, guid: 3591e23bbb618924c9788e7ee15a8b1f, type: 3}
+  GreenHit: {fileID: 162584487599433031, guid: 8c35514bfd770cd419bbbda5e640a604, type: 3}
+  YellowHit: {fileID: 362261158077530393, guid: 6d0c318668842b440992e2b3bc1e9760, type: 3}
+  floorCollider: {fileID: 1429696301}
+  destroyDelay: 1
 --- !u!1 &808288563
 GameObject:
   m_ObjectHideFlags: 0
