@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7680660355100644222}
   - component: {fileID: 3279996939681213559}
   - component: {fileID: -8314330352411770237}
+  - component: {fileID: -6486963478729609789}
   m_Layer: 0
   m_Name: Orb_Yellow
-  m_TagString: Untagged
+  m_TagString: Yellow_Orb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,3 +137,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-6486963478729609789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6154023334546047615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d270f67b6cc6f84bb43386acaf29b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GM: {fileID: 0}
