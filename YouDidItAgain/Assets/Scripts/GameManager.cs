@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private bool switched;
     public GameObject Borde_1;
     public GameObject Borde_2;
     public GameObject Borde_3;
     public TextMeshProUGUI switchCanvas;
+    public Image switchImage;
     public bool change = false;
     public bool switching = false;
     public bool red_variable = false;
@@ -20,7 +22,7 @@ public class GameManager : MonoBehaviour
     public Canvas canvas;
     public TextMeshProUGUI scoreText;
     public Image fadeImage;
-
+    private int i = 1;
     public Spawner sp;
     private int popcount = 0;
     private Color[] hdrColors;
@@ -70,18 +72,15 @@ public class GameManager : MonoBehaviour
             sp.condition = false;              // Stop spawning
             yield return new WaitForSeconds(3f); // Wait before color change
 
-            change = !change;                 // Trigger color change
-            switching = !switching;
-            if (switching) {
-                switchCanvas.gameObject.SetActive(true);
+            change = !change;
+            if (i % 3 == 0 || i % 4 == 0) { switching = !switching;
+                switchImage.gameObject.SetActive(true);
                 yield return new WaitForSeconds(1f);
-                switchCanvas.gameObject.SetActive(false);
+                switchImage.gameObject.SetActive(false);
+                switched = true;
             }
-            if (!switching) {
-                switchCanvas.gameObject.SetActive(true);
-                yield return new WaitForSeconds(1f);
-                switchCanvas.gameObject.SetActive(false);
-            }
+            
+            i++;
             sp.condition = true;              // Resume spawning
 
             // ❌ DO NOT restart the coroutine manually
