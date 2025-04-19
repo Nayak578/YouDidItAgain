@@ -79,7 +79,7 @@ public class Spawner : MonoBehaviour {
 
             Quaternion rotation = Quaternion.Euler(0f, 0f, Random.Range(minAngle, maxAngle));
             GameObject fruit = Instantiate(prefab, position, rotation);
-            Destroy(fruit, maxLifetime);
+            //Destroy(fruit, maxLifetime);
 
             float force = Random.Range(minForce, maxForce);
             fruit.GetComponent<Rigidbody>().AddForce(fruit.transform.up * force, ForceMode.Impulse);

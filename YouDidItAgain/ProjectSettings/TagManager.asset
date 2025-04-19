@@ -9,6 +9,7 @@ TagManager:
   - Green_Orb
   - Yellow_Orb
   - Orbs
+  - Floor
   layers:
   - Default
   - TransparentFX
