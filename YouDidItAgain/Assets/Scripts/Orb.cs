@@ -32,18 +32,27 @@ public class Orb : MonoBehaviour {
                 break;
         }
 
-        if ((state && !GM.switching) || (!state && GM.switching)) {
+        if ((state && !GM.switching) || (!state && GM.switching))
+        {
             Debug.Log("Good");
-            // maybe GM.IncreaseScore();
-        } else {
+            IncreaseMethod();
+            Effectsm FX = GM.GetComponent<Effectsm>();
+            if (FX != null)
+            {
+                FX.SpawnHitEffect(color.ToString(), transform.position);
+            }
+        }
+        else {
             Debug.Log("Wrong");
-            // maybe GM.GameOver();
+            GM.TriggerGameOver1();
+           
         }
-        Effectsm FX = GM.GetComponent<Effectsm>();
-        if (FX != null) {
-            FX.SpawnHitEffect(color.ToString(), transform.position);
-        }
-
         Destroy(gameObject);
+
+    }
+
+    private void IncreaseMethod()
+    {
+        GM.IncreaseScore();
     }
 }
