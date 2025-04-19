@@ -8,6 +8,7 @@ public class DoorOpen : MonoBehaviour
     public float animationDuration = 1f;
     public float openOffset = 200f; // how far the doors move to open
     public GameObject btn;
+    public GameObject InstBtn;
     private Vector2 upperClosedPos;
     private Vector2 lowerClosedPos;
 
@@ -35,7 +36,8 @@ public class DoorOpen : MonoBehaviour
         elapsedTime = 0f;
         isAnimating = true;
         btn.SetActive(false);
-        
+        InstBtn.SetActive(false);
+
     }
 
     void Update()
