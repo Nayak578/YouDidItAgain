@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject Borde_1;
     public GameObject Borde_2;
     public GameObject Borde_3;
-
+    public TextMeshProUGUI switchCanvas;
     public bool change = false;
     public bool switching = false;
     public bool red_variable = false;
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
         hdrColors[2] = hdrYellow;
         hdrColors[3] = hdrGreen;
 
-        Randomize_color();
+        //Randomize_color();
         UpdateScoreUI();
     }
 
@@ -71,7 +71,17 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(3f); // Wait before color change
 
             change = !change;                 // Trigger color change
-
+            switching = !switching;
+            if (switching) {
+                switchCanvas.gameObject.SetActive(true);
+                yield return new WaitForSeconds(1f);
+                switchCanvas.gameObject.SetActive(false);
+            }
+            if (!switching) {
+                switchCanvas.gameObject.SetActive(true);
+                yield return new WaitForSeconds(1f);
+                switchCanvas.gameObject.SetActive(false);
+            }
             sp.condition = true;              // Resume spawning
 
             // ❌ DO NOT restart the coroutine manually
@@ -109,6 +119,7 @@ public class GameManager : MonoBehaviour
             case 2: yellow_variable = true; break;
             case 3: green_variable = true; break;
         }
+        
     }
 
     public void IncreaseScore()
