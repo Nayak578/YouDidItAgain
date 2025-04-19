@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public DoorOpen DO;
     private bool switched;
     public GameObject Borde_1;
     public GameObject Borde_2;
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(ToggleChange());
+        if (DO != null)
+            DO.TriggerDoorOpen();
     }
 
     private void Awake()
