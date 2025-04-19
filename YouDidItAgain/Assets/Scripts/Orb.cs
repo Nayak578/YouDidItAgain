@@ -55,4 +55,28 @@ public class Orb : MonoBehaviour {
     {
         GM.IncreaseScore();
     }
+    private void OnTriggerEnter(Collider collision) {
+        if (collision.gameObject.CompareTag("Floor")) {
+            bool state = false;
+            switch (color) {
+                case OrbColor.Red:
+                    state = GM.red_variable;
+                    break;
+                case OrbColor.Cyan:
+                    state = GM.cyan_variable;
+                    break;
+                case OrbColor.Yellow:
+                    state = GM.yellow_variable;
+                    break;
+                case OrbColor.Green:
+                    state = GM.green_variable;
+                    break;
+            }
+            if ((state && !GM.switching) || (!state && GM.switching)) {
+                GM.DecreaseScore();
+            }
+                Destroy(gameObject);
+        }
+    }
+    
 }

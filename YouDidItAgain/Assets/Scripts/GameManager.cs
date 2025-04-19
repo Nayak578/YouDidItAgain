@@ -127,6 +127,11 @@ public class GameManager : MonoBehaviour
         popcount++;
         UpdateScoreUI();
     }
+    public void DecreaseScore() {
+        popcount--;
+        if (popcount < 0) popcount = 0;
+        UpdateScoreUI();
+    }
 
     private void NewGame()
     {
@@ -145,6 +150,7 @@ public class GameManager : MonoBehaviour
     {
         if (scoreText != null)
         {
+
             scoreText.text = "Score: " + popcount.ToString();
         }
     }
