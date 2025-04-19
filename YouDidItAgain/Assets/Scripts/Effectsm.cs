@@ -7,7 +7,8 @@ public class Effectsm : MonoBehaviour
     public GameObject CyanHit;
     public GameObject GreenHit;
     public GameObject YellowHit;
-
+    public AudioSource src;
+    public AudioClip sfx1, sfx2, sfx3, sfx4, sfx5;
     public Collider floorCollider;
     public float destroyDelay = 2f;
 
@@ -34,18 +35,28 @@ public class Effectsm : MonoBehaviour
         switch (color) {
             case "Red":
                 effect = RedHit;
+                src.clip = sfx1;
+                src.Play();
                 break;
             case "Cyan":
                 effect = CyanHit;
+                src.clip = sfx2;
+                src.Play();
                 break;
             case "Green":
                 effect = GreenHit;
+                src.clip = sfx3;
+                src.Play();
                 break;
             case "Yellow":
                 effect = YellowHit;
+                src.clip = sfx4;
+                src.Play();
                 break;
             default:
                 effect = basicHit;
+                //src.clip = sfx5;
+                //src.Play();
                 break;
         }
 
@@ -53,5 +64,9 @@ public class Effectsm : MonoBehaviour
             GameObject instance = Instantiate(effect, position, Quaternion.identity);
             Destroy(instance, destroyDelay);
         }
+    }
+    public void playsound() {
+        src.clip = sfx5;
+        src.Play();
     }
 }
