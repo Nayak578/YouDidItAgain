@@ -74,13 +74,11 @@ public class GameManager : MonoBehaviour
             switching = !switching;
             if (switching) {
                 switchCanvas.gameObject.SetActive(true);
-                switchCanvas.SetText("Switched");
                 yield return new WaitForSeconds(1f);
                 switchCanvas.gameObject.SetActive(false);
             }
             if (!switching) {
                 switchCanvas.gameObject.SetActive(true);
-                switchCanvas.SetText("UnSwitched");
                 yield return new WaitForSeconds(1f);
                 switchCanvas.gameObject.SetActive(false);
             }
