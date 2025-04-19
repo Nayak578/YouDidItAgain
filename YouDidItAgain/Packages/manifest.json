@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.2d.animation": "10.1.4",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.ide.rider": "3.0.31",

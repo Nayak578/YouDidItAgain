@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public Canvas canvas;
     public TextMeshProUGUI scoreText;
     public Image fadeImage;
+    public GameObject endImage;
     private int i = 1;
     public Spawner sp;
     private int popcount = 0;
@@ -158,6 +159,7 @@ public class GameManager : MonoBehaviour
     public void TriggerGameOver1()
     {
         gameOverPanel.SetActive(true);
+        endImage.SetActive(true);
         StartCoroutine(ReloadSceneAfterDelay());
     }
 
