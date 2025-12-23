@@ -1,5 +1,6 @@
 {
   "dependencies": {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
     "com.unity.2d.animation": {
@@ -8,6 +9,14 @@
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "9.1.1",
+=======
+    "com.unity.2d.animation": {
+      "version": "10.1.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.2d.common": "9.0.7",
+>>>>>>> main
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.collections": "1.2.4",
         "com.unity.modules.animation": "1.0.0",
@@ -16,7 +25,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.common": {
+<<<<<<< HEAD
       "version": "9.1.1",
+=======
+      "version": "9.0.7",
+>>>>>>> main
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -34,7 +47,10 @@
       "source": "builtin",
       "dependencies": {}
     },
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> main
     "com.unity.ai.navigation": {
       "version": "2.0.9",
       "depth": 0,
@@ -45,11 +61,15 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       "version": "1.8.19",
 =======
       "version": "1.8.25",
 >>>>>>> Stashed changes
+=======
+      "version": "1.8.18",
+>>>>>>> main
       "depth": 2,
       "source": "registry",
       "dependencies": {
@@ -68,11 +88,15 @@
     "com.unity.collections": {
 <<<<<<< Updated upstream
       "version": "2.5.1",
+<<<<<<< HEAD
       "depth": 2,
 =======
       "version": "2.6.2",
       "depth": 1,
 >>>>>>> Stashed changes
+=======
+      "depth": 1,
+>>>>>>> main
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.8.23",
@@ -81,6 +105,13 @@
         "com.unity.nuget.mono-cecil": "1.11.5",
         "com.unity.test-framework.performance": "3.0.3"
       },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.device-simulator.devices": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.ext.nunit": {
@@ -134,11 +165,15 @@
     "com.unity.nuget.mono-cecil": {
 <<<<<<< Updated upstream
       "version": "1.11.4",
+<<<<<<< HEAD
       "depth": 3,
 =======
       "version": "1.11.5",
       "depth": 2,
 >>>>>>> Stashed changes
+=======
+      "depth": 2,
+>>>>>>> main
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -153,7 +188,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
-      "version": "17.0.4",
+      "version": "17.0.3",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
@@ -172,8 +207,8 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "17.0.4",
-        "com.unity.shadergraph": "17.0.4",
+        "com.unity.render-pipelines.core": "17.0.3",
+        "com.unity.shadergraph": "17.0.3",
         "com.unity.render-pipelines.universal-config": "17.0.3"
       }
     },
@@ -196,19 +231,19 @@
       }
     },
     "com.unity.searcher": {
-      "version": "4.9.3",
+      "version": "4.9.2",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.shadergraph": {
-      "version": "17.0.4",
+      "version": "17.0.3",
       "depth": 1,
       "source": "builtin",
       "dependencies": {
-        "com.unity.render-pipelines.core": "17.0.4",
-        "com.unity.searcher": "4.9.3"
+        "com.unity.render-pipelines.core": "17.0.3",
+        "com.unity.searcher": "4.9.2"
       }
     },
     "com.unity.test-framework": {
@@ -224,11 +259,15 @@
     "com.unity.test-framework.performance": {
 <<<<<<< Updated upstream
       "version": "3.0.3",
+<<<<<<< HEAD
       "depth": 3,
 =======
       "version": "3.2.0",
       "depth": 2,
 >>>>>>> Stashed changes
+=======
+      "depth": 2,
+>>>>>>> main
       "source": "registry",
       "dependencies": {
         "com.unity.test-framework": "1.1.33",

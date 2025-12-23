@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Orb_Green
-  m_Shader: {fileID: -6465566751694194690, guid: 2a036c08e5fe7ac4c81cc558a72a0559, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4c93bc5ea51dc8944bec18317fa9f36d, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
